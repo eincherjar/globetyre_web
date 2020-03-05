@@ -14,9 +14,19 @@ $overlay: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
   outline: none;
 }
 
-.image.is-18x18 {
+.is-18x18 {
   height: 18px;
   width: 18px;
+}
+
+.is-special {
+  background-color: $special-color;
+  border-color: transparent;
+  color: $base-color;
+
+  &:hover {
+    border: 1px solid $special-color;
+  }
 }
 
 .hero {
@@ -48,49 +58,73 @@ $overlay: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
           background: transparent;
         }
       }
-    }
 
-    .navbar-item.has-dropdown {
-      background: $base-color;
-      border-radius: 25px;
-      margin-left: 4rem;
+      .navbar-item.has-dropdown {
+        background: $base-color;
+        border-radius: 25px;
+        margin-left: 4rem;
 
-      .navbar-link.is-active,
-      .navbar-link:focus,
-      .navbar-link:focus-within,
-      .navbar-link:hover,
-      a.navbar-item.is-active,
-      a.navbar-item:focus,
-      a.navbar-item:focus-within,
-      a.navbar-item:hover {
-        background-color: $base-color;
-        color: #3273dc;
-      }
-      .navbar-item.has-dropdown.is-active .navbar-link,
-      .navbar-item.has-dropdown:focus .navbar-link,
-      .navbar-item.has-dropdown:hover .navbar-link {
-        background-color: $base-color;
-      }
+        .navbar-link.is-active,
+        .navbar-link:focus,
+        .navbar-link:focus-within,
+        .navbar-link:hover,
+        a.navbar-item.is-active,
+        a.navbar-item:focus,
+        a.navbar-item:focus-within,
+        a.navbar-item:hover {
+          background-color: $base-color;
+          color: #3273dc;
+        }
+        .navbar-item.has-dropdown.is-active .navbar-link,
+        .navbar-item.has-dropdown:focus .navbar-link,
+        .navbar-item.has-dropdown:hover .navbar-link {
+          background-color: $base-color;
+        }
 
-      .navbar-dropdown {
-        box-shadow: none;
-        border-top: none;
+        .navbar-dropdown {
+          box-shadow: none;
+          border-top: none;
 
-        .navbar-item {
-          .image {
-            transition: all 0.3s ease;
+          .navbar-item {
+            .image {
+              transition: all 0.3s ease;
+            }
+
+            &:hover .image {
+              margin-left: 1rem;
+              transition: all 0.3s ease;
+            }
           }
-
-          &:hover .image {
-            margin-left: 1rem;
-            transition: all 0.3s ease;
+          a.navbar-item {
+            padding-right: 1rem;
           }
         }
       }
+    }
+  }
 
-      .navbar-dropdown a.navbar-item {
-        padding-right: 1rem;
+  .hero-body {
+    align-items: center;
+    margin-top: -10rem;
+    .title {
+      font-size: 7rem;
+      font-weight: 700;
+      line-height: 8rem;
+      text-align: center;
+      color: $base-color;
+
+      span {
+        color: $special-color;
       }
+    }
+
+    .subtitle {
+      color: $base-color;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      text-align: center;
+      width: 70%;
+      margin: auto;
     }
   }
 }
