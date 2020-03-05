@@ -29,6 +29,11 @@ $overlay: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
   }
 }
 
+section[id^="section"] {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .hero {
   background: $overlay, url(../img/hero-img.jpg);
   background-position: center;
