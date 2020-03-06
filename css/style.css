@@ -23,7 +23,47 @@
 
 section[id^="section"] {
   padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-bottom: 5rem;
+}
+
+section[id^="section"] h2.title {
+  color: #414141;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 3.1875rem;
+  margin-bottom: 3.375rem;
+}
+
+section[id^="section"] p {
+  color: #6c6c6c;
+  font-weight: 300;
+  line-height: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.pt-4 {
+  padding-top: 4rem;
+}
+
+.flex-align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero {
@@ -135,5 +175,46 @@ section[id^="section"] {
   text-align: center;
   width: 70%;
   margin: auto;
+}
+
+.tyres img {
+  min-width: 12.75rem;
+}
+
+.contact h3.subtitle {
+  font-size: 1.6rem;
+}
+
+.contact h4 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.contact span,
+.contact a {
+  display: block;
+  font-size: 0.9rem;
+  padding: 0.2rem;
+}
+
+.contact a {
+  color: #dd8d04;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contact a:hover {
+  background: #dd8d04;
+  color: #ffffff;
+}
+
+.contact .columns {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  background: #ffffff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 /*# sourceMappingURL=style.css.map */

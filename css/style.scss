@@ -31,7 +31,44 @@ $overlay: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
 
 section[id^="section"] {
   padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-bottom: 5rem;
+
+  h2.title {
+    color: $dark-color;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 3.1875rem;
+    margin-bottom: 3.375rem;
+  }
+
+  p {
+    color: $semi-dark-color;
+    font-weight: 300;
+    line-height: 1.75rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.pt-4 {
+  padding-top: 4rem;
+}
+
+.flex-align-items-center {
+  align-items: center;
 }
 
 .hero {
@@ -132,4 +169,46 @@ section[id^="section"] {
       margin: auto;
     }
   }
+}
+
+.tyres {
+  img {
+    min-width: 12.75rem;
+  }
+}
+
+.contact {
+  h3.subtitle {
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  span,
+  a {
+    display: block;
+    font-size: 0.9rem;
+    padding: 0.2rem;
+  }
+
+  a {
+    color: $special-color;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: $special-color;
+      color: $base-color;
+    }
+  }
+
+  .columns {
+    margin-bottom: 2rem;
+  }
+}
+
+.footer {
+  background: $base-color;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
