@@ -6,6 +6,10 @@
   outline: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .is-18x18 {
   height: 18px;
   width: 18px;
