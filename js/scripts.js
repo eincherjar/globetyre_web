@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Check if there are any navbar burgers
   if ($navbarBurgers.length > 0) {
     // Add a click event on each of them
-    $navbarBurgers.forEach(el => {
+    $navbarBurgers.forEach((el) => {
       el.addEventListener("click", () => {
         // Get the target from the "data-target" attribute
         const target = el.dataset.target;
@@ -17,4 +17,20 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  // scroll-up
+  var btn = $("#button-scroll-up");
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass("scroll-up-show");
+    } else {
+      btn.removeClass("scroll-up-show");
+    }
+  });
+
+  btn.on("click", function (e) {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "100");
+  });
 });
