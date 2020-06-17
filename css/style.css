@@ -112,6 +112,8 @@ section[id^="section"] p {
   background: #ffffff;
   border-radius: 25px;
   margin-left: 4rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .hero nav .navbar-end .navbar-item.has-dropdown .navbar-link.is-active,
@@ -124,12 +126,16 @@ section[id^="section"] p {
 .hero nav .navbar-end .navbar-item.has-dropdown a.navbar-item:hover {
   background-color: #ffffff;
   color: #3273dc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .hero nav .navbar-end .navbar-item.has-dropdown .navbar-item.has-dropdown.is-active .navbar-link,
 .hero nav .navbar-end .navbar-item.has-dropdown .navbar-item.has-dropdown:focus .navbar-link,
 .hero nav .navbar-end .navbar-item.has-dropdown .navbar-item.has-dropdown:hover .navbar-link {
   background-color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .hero nav .navbar-end .navbar-item.has-dropdown .navbar-dropdown {
@@ -183,6 +189,22 @@ section[id^="section"] p {
 
 .tyres img {
   min-width: 12.75rem;
+}
+
+.tyres .shop a {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.tyres .shop a img {
+  max-height: 120px;
+}
+
+.tyres .shop a:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .contact h3.subtitle {

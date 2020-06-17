@@ -109,6 +109,7 @@ section[id^="section"] {
         background: $base-color;
         border-radius: 25px;
         margin-left: 4rem;
+        transition: all 0.3s ease;
 
         .navbar-link.is-active,
         .navbar-link:focus,
@@ -120,11 +121,13 @@ section[id^="section"] {
         a.navbar-item:hover {
           background-color: $base-color;
           color: #3273dc;
+          transition: all 0.3s ease;
         }
         .navbar-item.has-dropdown.is-active .navbar-link,
         .navbar-item.has-dropdown:focus .navbar-link,
         .navbar-item.has-dropdown:hover .navbar-link {
           background-color: $base-color;
+          transition: all 0.3s ease;
         }
 
         .navbar-dropdown {
@@ -178,6 +181,20 @@ section[id^="section"] {
 .tyres {
   img {
     min-width: 12.75rem;
+  }
+
+  .shop {
+    a {
+      transition: all 0.3s ease-in-out;
+      img {
+        max-height: 120px;
+      }
+
+      &:hover {
+        transform: scale(0.95);
+        transition: all 0.3s ease-in-out;
+      }
+    }
   }
 }
 
