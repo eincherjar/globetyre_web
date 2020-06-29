@@ -37,11 +37,6 @@ html {
   justify-content: center;
 }
 
-/* This only changes this particular animation duration */
-.animate__animated {
-  --animate-duration: 1s;
-}
-
 #button-scroll-up {
   display: inline-block;
   background-color: $special-color;
