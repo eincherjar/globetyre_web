@@ -26,6 +26,12 @@ html {
   border: 1px solid #dd8d04;
 }
 
+.is-horizontal-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #button-scroll-up {
   display: inline-block;
   background-color: #dd8d04;

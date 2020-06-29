@@ -33,6 +33,10 @@ html {
   }
 }
 
+.is-horizontal-center {
+  justify-content: center;
+}
+
 #button-scroll-up {
   display: inline-block;
   background-color: $special-color;
