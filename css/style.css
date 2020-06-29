@@ -242,6 +242,10 @@ section[id^="section"] p {
   max-height: 120px;
 }
 
+.tyres .shop a .allegro-logo {
+  max-height: 90px !important;
+}
+
 .tyres .shop a:hover {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);

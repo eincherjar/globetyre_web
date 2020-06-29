@@ -230,6 +230,10 @@ section[id^="section"] {
         max-height: 120px;
       }
 
+      .allegro-logo {
+        max-height: 90px !important;
+      }
+
       &:hover {
         transform: scale(0.95);
         transition: all 0.3s ease-in-out;
