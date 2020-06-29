@@ -131,6 +131,17 @@ section[id^="section"] p {
   padding: 4rem 15rem;
 }
 
+.hero nav .navbar-brand .navbar-item {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.hero nav .navbar-brand .navbar-item:hover {
+  padding-left: 2rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .hero nav .navbar-brand img {
   max-height: 2.75rem;
 }

@@ -129,8 +129,19 @@ section[id^="section"] {
   nav {
     padding: 4rem 15rem;
 
-    .navbar-brand img {
-      max-height: 2.75rem;
+    .navbar-brand {
+      .navbar-item {
+        transition: all 0.3s ease;
+
+        &:hover {
+          padding-left: 2rem;
+          transition: all 0.3s ease;
+        }
+      }
+
+      img {
+        max-height: 2.75rem;
+      }
     }
 
     .navbar-end {
