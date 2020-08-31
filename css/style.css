@@ -78,6 +78,20 @@ section[id^="section"] {
   padding-bottom: 5rem;
 }
 
+@media (max-width: 768px) {
+  section[id^="section"] {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  section[id^="section"] {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
 section[id^="section"] h2.title {
   color: #414141;
   font-size: 2.25rem;
@@ -118,6 +132,18 @@ section[id^="section"] p {
           align-items: center;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .container {
+    padding: 1rem;
+  }
+}
+
 .hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url(../img/hero-img.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../img/hero-img.jpg);
@@ -129,6 +155,22 @@ section[id^="section"] p {
 
 .hero nav {
   padding: 4rem 15rem;
+}
+
+@media (max-width: 768px) {
+  .hero nav {
+    padding: 2rem 3rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .hero nav {
+    padding: 2rem 3rem;
+  }
+}
+
+.hero nav .navbar-burger {
+  color: #dd8d04;
 }
 
 .hero nav .navbar-brand .navbar-item {
@@ -144,6 +186,18 @@ section[id^="section"] p {
 
 .hero nav .navbar-brand img {
   max-height: 2.75rem;
+}
+
+.hero nav .navbar-menu.is-active {
+  background-color: #dd8d04;
+}
+
+.hero nav .navbar-menu.is-active .navbar-end {
+  text-align: center;
+}
+
+.hero nav .navbar-menu.is-active .navbar-end .has-dropdown {
+  margin: 0 1rem;
 }
 
 .hero nav .navbar-end {
@@ -225,12 +279,44 @@ section[id^="section"] p {
   margin-top: -10rem;
 }
 
+@media (max-width: 768px) {
+  .hero .hero-body {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .hero .hero-body {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero .hero-body {
+    margin-top: 14rem;
+  }
+}
+
 .hero .hero-body .title {
   font-size: 7rem;
   font-weight: 700;
   line-height: 8rem;
   text-align: center;
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .hero .hero-body .title {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .hero .hero-body .title {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
 }
 
 .hero .hero-body .title span {
@@ -246,8 +332,92 @@ section[id^="section"] p {
   margin: auto;
 }
 
+@media (max-width: 768px) {
+  .hero .hero-body .subtitle {
+    width: 90%;
+    font-size: 1.55rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about p {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .about p {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 768px) {
+  .about img {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .tyres img {
   min-width: 12.75rem;
+}
+
+@media (max-width: 768px) {
+  .tyres p {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 768px) {
+  .tyres .is-mobile {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .tyres .orders {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tyres .orders .order:first-of-type {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .tyres .orders {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tyres .orders .order:first-of-type {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .tyres .shop {
+    margin-top: 2rem;
+  }
 }
 
 .tyres .shop a {

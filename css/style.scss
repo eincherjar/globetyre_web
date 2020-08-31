@@ -8,6 +8,22 @@ $semi-dark-color: #6c6c6c;
 
 $overlay: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
 
+@mixin xs {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (min-width: 769px) and (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
 * {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
@@ -81,6 +97,16 @@ section[id^="section"] {
   padding-top: 8rem;
   padding-bottom: 5rem;
 
+  @include xs {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  @include sm {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   h2.title {
     color: $dark-color;
     font-size: 2.25rem;
@@ -119,6 +145,16 @@ section[id^="section"] {
   align-items: center;
 }
 
+.container {
+  @include xs {
+    padding: 1rem;
+  }
+
+  @include sm {
+    padding: 1rem;
+  }
+}
+
 .hero {
   background: $overlay, url(../img/hero-img.jpg);
   background-position: center;
@@ -126,8 +162,24 @@ section[id^="section"] {
   background-repeat: no-repeat;
   min-height: 100vh;
 
+  // @include sm {
+  //   min-height: 80vh;
+  // }
+
   nav {
     padding: 4rem 15rem;
+
+    @include xs {
+      padding: 2rem 3rem;
+    }
+
+    @include sm {
+      padding: 2rem 3rem;
+    }
+
+    .navbar-burger {
+      color: #dd8d04;
+    }
 
     .navbar-brand {
       .navbar-item {
@@ -141,6 +193,18 @@ section[id^="section"] {
 
       img {
         max-height: 2.75rem;
+      }
+    }
+
+    .navbar-menu.is-active {
+      background-color: $special-color;
+
+      .navbar-end {
+        text-align: center;
+
+        .has-dropdown {
+          margin: 0 1rem;
+        }
       }
     }
 
@@ -210,12 +274,35 @@ section[id^="section"] {
   .hero-body {
     align-items: center;
     margin-top: -10rem;
+
+    @include xs {
+      margin-top: 0;
+    }
+
+    @include sm {
+      margin-top: 4rem;
+    }
+
+    @include md {
+      margin-top: 14rem;
+    }
+
     .title {
       font-size: 7rem;
       font-weight: 700;
       line-height: 8rem;
       text-align: center;
       color: $base-color;
+
+      @include xs {
+        font-size: 6rem;
+        line-height: 6rem;
+      }
+
+      @include sm {
+        font-size: 6rem;
+        line-height: 6rem;
+      }
 
       span {
         color: $special-color;
@@ -229,6 +316,31 @@ section[id^="section"] {
       text-align: center;
       width: 70%;
       margin: auto;
+
+      @include xs {
+        width: 90%;
+        font-size: 1.55rem;
+        line-height: 2rem;
+      }
+    }
+  }
+}
+
+.about {
+  p {
+    @include xs {
+      text-align: justify;
+    }
+
+    @include sm {
+      text-align: justify;
+    }
+  }
+
+  img {
+    @include xs {
+      margin: 0 auto;
+      display: flex;
     }
   }
 }
@@ -238,7 +350,43 @@ section[id^="section"] {
     min-width: 12.75rem;
   }
 
+  p {
+    @include xs {
+      text-align: justify;
+    }
+  }
+
+  .is-mobile {
+    @include xs {
+      flex-flow: row wrap;
+    }
+  }
+
+  .orders {
+    @include xs {
+      display: flex;
+      flex-direction: column;
+
+      .order:first-of-type {
+        order: 2;
+      }
+    }
+
+    @include sm {
+      display: flex;
+      flex-direction: column;
+
+      .order:first-of-type {
+        order: 2;
+      }
+    }
+  }
+
   .shop {
+    @include xs {
+      margin-top: 2rem;
+    }
+
     a {
       transition: all 0.3s ease-in-out;
       img {
