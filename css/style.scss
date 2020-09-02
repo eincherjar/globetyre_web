@@ -19,7 +19,7 @@ $overlay: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
   }
 }
 @mixin md {
-  @media (min-width: 1300px) {
+  @media (min-width: 1250px) {
     @content;
   }
 }

@@ -291,7 +291,7 @@ section[id^="section"] p {
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1250px) {
   .hero .hero-body {
     margin-top: 14rem;
   }
