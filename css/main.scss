@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+// Variables //
+$base-color: #ffffff;
+$special-color: #dd8d04;
+$dark-color: #414141;
+$semi-dark-color: #6c6c6c;
+$overlay: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.is-special {
+  background-color: $special-color;
+  border-color: transparent;
+  color: $base-color;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+
+  &:hover {
+    color: $special-color;
+    background-color: transparent;
+    border: 1px solid $special-color;
+  }
+}
+
+header {
+  background: $overlay, url(../img/hero-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  .navbar {
+    .navbar-brand {
+      img {
+        max-height: 2.75rem;
+      }
+    }
+
+    .navbar-nav {
+      .nav-item {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+
+        .nav-link {
+          color: rgba(255, 255, 255, 0.8);
+          font-weight: 700;
+          //   text-transform: uppercase;
+          transition: all 0.3s ease;
+
+          &:hover {
+            color: $special-color;
+          }
+        }
+      }
+    }
+  }
+
+  #s-hero {
+    min-height: 70vh;
+
+    h1 {
+      font-size: 7rem;
+      font-weight: 700;
+      line-height: 8rem;
+      text-align: center;
+      color: #ffffff;
+
+      & span {
+        color: $special-color;
+      }
+    }
+
+    h2 {
+      color: #ffffff;
+      font-size: 1.6rem;
+      line-height: 2rem;
+      text-align: center;
+      width: 70%;
+      margin: auto;
+    }
+  }
+}
