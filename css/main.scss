@@ -6,6 +6,13 @@ $special-color: #dd8d04;
 $dark-color: #414141;
 $semi-dark-color: #6c6c6c;
 $overlay: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+$f-small: 1rem;
+
+@mixin xxl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -29,6 +36,56 @@ html {
     background-color: transparent;
     border: 1px solid $special-color;
   }
+}
+
+.pb-6,
+.py-6 {
+  padding-bottom: 6rem !important;
+}
+.pt-6,
+.py-6 {
+  padding-top: 6rem !important;
+}
+
+.mb-6,
+.my-6 {
+  margin-bottom: 6rem !important;
+}
+.mt-6,
+.my-6 {
+  margin-top: 6rem !important;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 80%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.image-100 {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.font-small {
+  font-size: $f-small;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.display-5 {
+  font-size: 2rem;
 }
 
 header {
@@ -87,5 +144,11 @@ header {
       width: 70%;
       margin: auto;
     }
+  }
+}
+
+@include xxl {
+  .container {
+    max-width: 1344px;
   }
 }
