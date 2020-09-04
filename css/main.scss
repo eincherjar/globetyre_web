@@ -147,6 +147,26 @@ header {
   }
 }
 
+#s-contact {
+  .card {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+  }
+
+  a {
+    padding: 0.25rem 2rem;
+    text-decoration: none;
+    color: $special-color;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: $special-color;
+      color: $base-color;
+    }
+  }
+}
+
 @include xxl {
   .container {
     max-width: 1344px;

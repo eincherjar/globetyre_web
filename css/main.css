@@ -132,6 +132,25 @@ header #s-hero h2 {
   margin: auto;
 }
 
+#s-contact .card {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+#s-contact a {
+  padding: 0.25rem 2rem;
+  text-decoration: none;
+  color: #dd8d04;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#s-contact a:hover {
+  background: #dd8d04;
+  color: #ffffff;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1344px;
