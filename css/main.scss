@@ -58,9 +58,8 @@ html {
 
 .map-responsive {
   overflow: hidden;
-  padding-bottom: 80%;
+  padding-bottom: 60%;
   position: relative;
-  height: 0;
 }
 .map-responsive iframe {
   left: 0;
@@ -86,6 +85,47 @@ html {
 
 .display-5 {
   font-size: 2rem;
+}
+
+#button-scroll-up {
+  display: inline-block;
+  background-color: $special-color;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  text-decoration: none;
+
+  &:after {
+    content: "⇡";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+
+  &:active {
+    background-color: #555;
+  }
+}
+
+.scroll-up-show {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 header {
@@ -165,10 +205,15 @@ header {
       color: $base-color;
     }
   }
+
+  p,
+  span {
+    font-size: 0.9rem;
+  }
 }
 
 @include xxl {
   .container {
-    max-width: 1344px;
+    max-width: 90%;
   }
 }

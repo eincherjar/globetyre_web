@@ -1,400 +1,504 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Globe Tyre</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-    <section class="hero">
-        <div class="container">
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="https://globetyre.pl">
-                        <img src="./img/logo.png" />
-                    </a>
+    <!-- Back to top button -->
+    <a id="button-scroll-up"></a>
 
-                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
-                </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-5">
+            <div class="container">
+                <a class="navbar-brand" href="https://globetyre.pl">
+                    <img src="./img/logo.png" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <div id="navbarMain" class="navbar-menu">
-                    <div class="navbar-end">
-                        <a href="#section-about" class="navbar-item">
-                            O firmie
-                        </a>
-
-                        <a href="#section-tyres" class="navbar-item">
-                            Opony
-                        </a>
-
-                        <a href="#section-logistic" class="navbar-item">
-                            Logistyka
-                        </a>
-
-                        <a href="#section-contact" class="navbar-item">
-                            Kontakt
-                        </a>
-
-                        <a href="http://b2b.globetyre.pl/" class="navbar-item button is-special">
-                            Strefa klienta
-                        </a>
-
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a href="#" class="navbar-link">
-                                <figure class="image is-18x18">
-                                    <img src="./img/flag_icons/poland.svg" />
-                                </figure>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#s-about">O firmie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#s-tyres">Opony</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#s-logistic">Logistyka</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#s-contact">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link is-special" href="#">Strefa klienta</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="./img/flag_icons/poland.svg" />
                             </a>
-
-                            <div class="navbar-dropdown">
-                                <a href="#" class="navbar-item">
-                                    <figure class="image is-18x18">
-                                        <img src="./img/flag_icons/germany.svg" />
-                                    </figure>
-                                </a>
-                                <a href="#" class="navbar-item">
-                                    <figure class="image is-18x18">
-                                        <img src="./img/flag_icons/united-kingdom.svg" />
-                                    </figure>
-                                </a>
-                                <a href="#" class="navbar-item">
-                                    <figure class="image is-18x18">
-                                        <img src="./img/flag_icons/italy.svg" />
-                                    </figure>
-                                </a>
-                                <a href="#" class="navbar-item">
-                                    <figure class="image is-18x18">
-                                        <img src="./img/flag_icons/france.svg" />
-                                    </figure>
-                                </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item w-50" href="#"><img src="./img/flag_icons/germany.svg" /> Deutschland</a>
+                                <a class="dropdown-item w-50" href="#"><img src="./img/flag_icons/united-kingdom.svg" /> Great Britain</a>
+                                <a class="dropdown-item w-50" href="#"><img src="./img/flag_icons/italy.svg" /> Italia</a>
+                                <a class="dropdown-item w-50" href="#"><img src="./img/flag_icons/france.svg" /> France</a>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-            <div class="hero-body is-flex">
+            </div>
+        </nav>
+
+        <section id="s-hero" class="d-flex justify-content-center align-items-center">
+            <div class="jumbotron bg-transparent">
                 <div class="container">
-                    <h1 class="title">Opony <span>i</span> Logistyka</h1>
-                    <h2 class="subtitle">
-                        Zadowolenie klienta jest naszym celem od samego początku powstania firmy i ta zasada jest przez nas konsekwentnie realizowana
-                    </h2>
+                    <h1 class="display-4">Opony <span>i</span> Logistyka</h1>
+                    <h2 class="lead">Zadowolenie klienta jest naszym celem od samego początku powstania firmy i ta zasada jest przez nas konsekwentnie realizowana</h2>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </header>
 
-    <section class="about" id="section-about">
-        <div class="container">
-            <div class="columns is-desktop">
-                <div class="column">
-                    <h2 class="title has-text-centered">O firmie</h2>
-                    <p>
-                        <strong>Globe Tyre</strong> to firma zajmująca się dystrybucją opon oraz świadczy usługi z zakresu logistyki magazynowej, składowania, konfekcjonowania, załadunku i rozładunku towarów
-                        spaletyzowanych.
-                    </p>
-                    <p>
-                        Zadowolenie klienta jest naszym celem od samego początku powstania firmy i ta zasada jest przez nas konsekwentnie realizowana. Znając Państwa wymagania potrafimy sprostać wszelkim
-                        oczekiwaniom.
-                    </p>
-                    <p>
-                        <strong>W naszej ofercie znajdziecie Państwo tylko sprawdzone i oryginalne towary spełniające wysokie standardy jakości.</strong>
-                    </p>
-                    <div class="columns is-mobile">
-                        <div class="column">
-                            <a href="https://ec.europa.eu/regional_policy/pl/funding/erdf/">
-                                <figure><img src="./img/europejski-fundusz-rozwoju-regionalnego.png" /></figure>
-                            </a>
-                        </div>
-                        <div class="column">
-                            <a href="http://www.enova.pl/">
-                                <figure><img src="./img/enova365.png" /></figure>
-                            </a>
-                        </div>
-                        <div class="column">
-                            <a href="https://www.funduszeeuropejskie.gov.pl/strony/wiadomosci/rozwoj-innowacyjnosci-przedsiebiorstw-w-latach-2014-2020/">
-                                <figure><img src="./img/innowacyjna-gospodarka.jpg" /></figure>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="map-responsive">
-                        <iframe width="600" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=GLOBE%20TYRE%20Sp.%20z%20o.o.%2C%20Sp.%20komandytowa&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <main>
+        <section id="s-about" class="py-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xl-6">
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="mb-5 text-center display-4"><strong>O firmie</strong></h2>
+                                <p class="lead text-justify">
+                                    <strong>Globe Tyre</strong> to firma zajmująca się dystrybucją opon oraz świadczy usługi z zakresu logistyki magazynowej, składowania, konfekcjonowania, załadunku i rozładunku towarów
+                                    spaletyzowanych.
+                                </p>
 
-    <section class="tyres" id="section-tyres">
-        <div class="container">
-            <div class="columns orders is-desktop">
-                <div class="column order">
-                    <div class="columns is-mobile">
-                        <div class="column is-flex flex-align-items-center">
-                            <figure><img src="./img/tyre_brands/autogreen.svg" alt="autogreen" /></figure>
+                                <p class="lead text-justify">
+                                    Zadowolenie klienta jest naszym celem od samego początku powstania firmy i ta zasada jest przez nas konsekwentnie realizowana. Znając Państwa wymagania potrafimy sprostać wszelkim
+                                    oczekiwaniom.
+                                </p>
+
+                                <p class="lead text-justify">
+                                    <strong>W naszej ofercie znajdziecie Państwo tylko sprawdzone i oryginalne towary spełniające wysokie standardy jakości.</strong>
+                                </p>
+                            </div>
                         </div>
-                        <div class="column is-flex flex-align-items-center">
-                            <figure><img src="./img/tyre_brands/sunny.svg" alt="sunny" /></figure>
-                        </div>
-                        <div class="column is-flex flex-align-items-center">
-                            <figure><img src="./img/tyre_brands/haida.svg" alt="haida" /></figure>
-                        </div>
-                    </div>
-                    <div class="columns is-mobile">
-                        <div class="column is-flex flex-align-items-center">
-                            <figure><img src="./img/tyre_brands/pirelli.svg" alt="pirelli" /></figure>
-                        </div>
-                        <div class="column is-flex flex-align-items-center">
-                            <figure><img src="./img/tyre_brands/continental.svg" alt="container" /></figure>
-                        </div>
-                        <div class="column is-flex flex-align-items-center">
-                            <figure><img src="./img/tyre_brands/nokian.svg" alt="nokian" /></figure>
-                        </div>
-                    </div>
-                    <div class="columns is-mobile">
-                        <div class="column is-flex flex-align-items-center">
-                            <figure><img src="./img/tyre_brands/bridgestone.svg" alt="bridgestone" /></figure>
-                        </div>
-                        <div class="column is-flex flex-align-items-center">
-                            <figure><img src="./img/tyre_brands/michelin.svg" alt="michelin" /></figure>
-                        </div>
-                        <div class="column is-flex flex-align-items-center">
-                            <figure><img src="./img/tyre_brands/goodyear.svg" alt="goodyear" /></figure>
+                        <div class="row">
+                            <div class="col col-xl-4">
+                                <a href="https://ec.europa.eu/regional_policy/pl/funding/erdf/">
+                                    <img src="./img/europejski-fundusz-rozwoju-regionalnego.png" class="image-100" />
+                                </a>
+                            </div>
+                            <div class="col col-xl-4">
+                                <a href="http://www.enova.pl/">
+                                    <img src="./img/enova365.png" class="image-100" />
+                                </a>
+                            </div>
+                            <div class="col col-xl-4">
+                                <a href="https://www.funduszeeuropejskie.gov.pl/strony/wiadomosci/rozwoj-innowacyjnosci-przedsiebiorstw-w-latach-2014-2020/">
+                                    <img src="./img/innowacyjna-gospodarka.jpg" class="image-100" />
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="columns is-mobile">
-                        <div class="column is-flex flex-align-items-center">
-                            <figure><img src="./img/tyre_brands/debica2.svg" alt="debica" /></figure>
-                        </div>
-                        <div class="column is-flex flex-align-items-center">
-                            <figure><img src="./img/tyre_brands/hankook.svg" alt="hankook" /></figure>
-                        </div>
-                        <div class="column is-flex flex-align-items-center">
-                            <figure><img src="./img/tyre_brands/firestone.svg" alt="firestone" /></figure>
+                    <div class="col col-xl-6">
+                        <div class="map-responsive">
+                            <iframe width="600" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=GLOBE%20TYRE%20Sp.%20z%20o.o.%2C%20Sp.%20komandytowa&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                         </div>
                     </div>
-                </div>
-                <div class="column order">
-                    <h2 class="title has-text-centered">Opony</h2>
-                    <p>
-                        Posiadamy dostęp do najlepszych i sprawdzonych marek opon w najlepszych cenach. Sprzedawane przez nas ogumienie to gwarancja jakości i zadowolenia. Dysponujemy oponami o różnych
-                        rozmiarach począwszy od najmniejszych opon osobowych przez dostawcze i ciężarowe po rolnicze i przemysłowe. Zapewniamy <strong>100%</strong> poufności dla naszych klientów oraz szybkie
-                        dostawy.
-                    </p>
-                    <p>
-                        Szybkie dostawy, konkurencyjne ceny, dostępność dużych partii towaru, przyjazny kontakt z każdym klientem oraz profesjonalne doradztwo i wsparcie to cechy, które nas wyróżniają.
-                    </p>
                 </div>
             </div>
-            <div class="columns shop">
-                <div class="column">
-                    <div class="columns">
-                        <div class="column">
-                            <h2 class="is-size-3"><b>Naszą ofertę opon można obejrzeć na:</b></h2>
+        </section>
+
+        <section id="s-tyres" class="py-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xl-6 pt-5">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="./img/tyre_brands/autogreen.svg" alt="autogreen" class="image-100 mb-5" />
+                            </div>
+                            <div class="col-4">
+                                <img src="./img/tyre_brands/sunny.svg" alt="sunny" class="image-100 mb-5" />
+                            </div>
+                            <div class="col-4">
+                                <img src="./img/tyre_brands/haida.svg" alt="haida" class="image-100 mb-5" />
+                            </div>
+                            <div class="col-4">
+                                <img src="./img/tyre_brands/pirelli.svg" alt="pirelli" class="image-100 mb-5" />
+                            </div>
+                            <div class="col-4">
+                                <img src="./img/tyre_brands/continental.svg" alt="container" class="image-100 mb-5" />
+                            </div>
+                            <div class="col-4">
+                                <img src="./img/tyre_brands/nokian.svg" alt="nokian" class="image-100 mb-5" />
+                            </div>
+                            <div class="col-4">
+                                <img src="./img/tyre_brands/bridgestone.svg" alt="bridgestone" class="image-100 mb-5" />
+                            </div>
+                            <div class="col-4">
+                                <img src="./img/tyre_brands/michelin.svg" alt="michelin" class="image-100 mb-5" />
+                            </div>
+                            <div class="col-4">
+                                <img src="./img/tyre_brands/goodyear.svg" alt="goodyear" class="image-100 mb-5" />
+                            </div>
+
+                            <div class="col-4">
+                                <img src="./img/tyre_brands/debica2.svg" alt="debica" class="image-100 mb-5" />
+                            </div>
+                            <div class="col-4">
+                                <img src="./img/tyre_brands/hankook.svg" alt="hankook" class="image-100 mb-5" />
+                            </div>
+                            <div class="col-4">
+                                <img src="./img/tyre_brands/firestone.svg" alt="firestone" class="image-100 mb-5" />
+                            </div>
                         </div>
-                        <div class="column">
-                            <div class="columns is-mobile">
-                                <div class="column">
-                                    <a href="https://sklep.wojnaopon.pl/">
-                                        <figure><img src="./img/wojnaopon_logo.png" alt="wojnaopon logo" /></figure>
-                                    </a>
-                                </div>
-                                <div class="column">
-                                    <a href="https://allegro.pl/uzytkownik/WojnaOponPL">
-                                        <figure><img src="./img/allegro_logo.png" alt="allegro logo" class="allegro-logo" /></figure>
-                                    </a>
-                                </div>
+                    </div>
+                    <div class="col col-xl-6">
+                        <h2 class="mb-5 text-center display-4"><strong>Opony</strong></h2>
+                        <p class="lead text-justify">
+                            Posiadamy dostęp do najlepszych i sprawdzonych marek opon w najlepszych cenach. Sprzedawane przez nas ogumienie to gwarancja jakości i zadowolenia. Dysponujemy oponami o różnych
+                            rozmiarach począwszy od najmniejszych opon osobowych przez dostawcze i ciężarowe po rolnicze i przemysłowe. Zapewniamy <strong>100%</strong> poufności dla naszych klientów oraz szybkie
+                            dostawy.
+                        </p>
+
+                        <p class="lead text-justify">
+                            Szybkie dostawy, konkurencyjne ceny, dostępność dużych partii towaru, przyjazny kontakt z każdym klientem oraz profesjonalne doradztwo i wsparcie to cechy, które nas wyróżniają.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col col-xl-6 d-flex justify-content-center align-items-center">
+                        <h2 class="display-5"><b>Naszą ofertę opon można znaleźć na:</b></h2>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <a href="https://sklep.wojnaopon.pl/">
+                                    <img src="./img/wojnaopon_logo.png" alt="wojnaopon logo" class="image-100" />
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://allegro.pl/uzytkownik/WojnaOponPL">
+                                    <img src="./img/allegro_logo.png" alt="allegro logo" class="image-100" />
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="logistic" id="section-logistic">
-        <div class="container">
-            <div class="columns is-desktop">
-                <div class="column">
-                    <h2 class="title has-text-centered">Logistyka</h2>
-                    <p class="has-text-justified">
-                        Świadczymy usługi z zakresu logistyki magazynowej, składowania, konfekcjonowania, załadunku i rozładunku towarów spaletyzowanych. Dysponujemy magazynem logistycznym o powierzchni <br />
-                        <strong>10000 m²</strong>. Jego Zaplecze techniczne umożliwia szybkie i wygodne przeładunki Państwa towarów.
-                    </p>
-                    <p class="has-text-justified">
-                        Do dyspozycji posiadamy sprzęt dzięki któremu jesteśmy w stanie szybko i sprawnie dokonywać załadunków i rozładunków samochodów, które dostarczają towary Państwa firm. W przypadku
-                        potrzeby zwiększenia powierzchni magazynowej nasza firma jest w stanie dopasować ją do Państwa oczekiwań.
-                    </p>
-                    <p class="has-text-justified">
-                        Położenie magazynu w bliskiej odległości <strong>autostrady A4</strong>, stwarza optymalne warunki dla dystrybucji oraz transportu krajowego i miedzynarodowewgo. Wychodząc naprzeciw
-                        wymaganiom swoich klientów Globe Tyre uruchomiło dział Spedycyjno transportowy, który uzupełnia nasze usługi, dzięki czemu stają się kompleksowymi w logistyce.
-                    </p>
-                </div>
-                <div class="column pt-4">
-                    <figure class="image is-16by9">
-                        <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/-kM5pq3XTLA?showinfo=0&autoplay=1&loop=1&playlist=-kM5pq3XTLA" frameborder="0" allowfullscreen></iframe>
-                    </figure>
-                </div>
-            </div>
+        <sectioon id="s-logistic" class="py-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="mb-5 text-center display-4"><strong>Logistyka</strong></h2>
+                        <p class="lead text-justify">
+                            Świadczymy usługi z zakresu logistyki magazynowej, składowania, konfekcjonowania, załadunku i rozładunku towarów spaletyzowanych. Dysponujemy magazynem logistycznym o powierzchni <br />
+                            <strong>10000 m²</strong>. Jego Zaplecze techniczne umożliwia szybkie i wygodne przeładunki Państwa towarów.
+                        </p>
 
-            <div class="columns is-mobile">
-                <div class="column is-flex is-horizontal-center">
-                    <figure><img src="./img/logistic/logistic_11.jpg" alt="logistic1" /></figure>
-                </div>
-                <div class="column is-flex is-horizontal-center">
-                    <figure><img src="./img/logistic/logistic_2.jpg" alt="logistic2" /></figure>
-                </div>
-                <div class="column is-flex is-horizontal-center">
-                    <figure><img src="./img/logistic/logistic_3.jpg" alt="logistic3" /></figure>
-                </div>
-                <div class="column is-flex is-horizontal-center">
-                    <figure><img src="./img/logistic/logistic_4.jpg" alt="logistic4" /></figure>
-                </div>
-            </div>
+                        <p class="lead text-justify">
+                            Do dyspozycji posiadamy sprzęt dzięki któremu jesteśmy w stanie szybko i sprawnie dokonywać załadunków i rozładunków samochodów, które dostarczają towary Państwa firm. W przypadku
+                            potrzeby zwiększenia powierzchni magazynowej nasza firma jest w stanie dopasować ją do Państwa oczekiwań.
+                        </p>
 
-            <div class="columns is-mobile pt-4">
-                <div class="column is-full">
-                    <h2 class="has-text-centered is-size-4">
-                        Warto nam zaufać, ponieważ dbamy o swoich klientów i zawsze staramy się sprostać ich oczekiwaniom myśląc o ich satysfakcji, która nie ogranicza się wyłącznie do finansów.
-                    </h2>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="section-contact">
-        <div class="container">
-            <h2 class="title has-text-centered">Kontakt</h2>
-            <div class="columns is-desktop">
-                <div class="column">
-                    <h3 class=" subtitle has-text-centered">Zarząd</h3>
-                    <div class="columns is-mobile">
-                        <div class="column has-text-centered">
-                            <h4>Zenon Godawski</h4>
-                            <span><i class="fas fa-phone"></i> +48 694 644 722</span>
-                            <a href="mailto:zenon@globetyre.pl"><i class="far fa-envelope"></i> zenon@globetyre.pl</a>
-                        </div>
-                        <div class="column has-text-centered">
-                            <h4>Paweł Lachcik</h4>
-                            <span><i class="fas fa-phone"></i> +48 795 324 290</span>
-                            <a href="mailto:pawel@globetyre.pl"><i class="far fa-envelope"></i> pawel@globetyre.pl</a>
-                        </div>
+                        <p class="lead text-justify">
+                            Położenie magazynu w bliskiej odległości <strong>autostrady A4</strong>, stwarza optymalne warunki dla dystrybucji oraz transportu krajowego i miedzynarodowewgo. Wychodząc naprzeciw
+                            wymaganiom swoich klientów Globe Tyre uruchomiło dział Spedycyjno transportowy, który uzupełnia nasze usługi, dzięki czemu stają się kompleksowymi w logistyce.
+                        </p>
+                    </div>
+                    <div class="col">
+                        <iframe class="has-ratio" width="900" height="507" src="https://www.youtube.com/embed/-kM5pq3XTLA?showinfo=0&autoplay=1&loop=1&playlist=-kM5pq3XTLA" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="column">
-                    <h3 class=" subtitle has-text-centered">Księgowość</h3>
-                    <div class="columns is-mobile">
-                        <div class="column has-text-centered">
-                            <h4>Ewa Bochenek</h4>
-                            <span><i class="fas fa-phone"></i> +48 530 166 533</span>
-                            <a href="mailto:ksiegowosc@globetyre.pl"><i class="far fa-envelope"></i> ksiegowosc@globetyre.pl</a>
-                        </div>
-                        <div class="column has-text-centered">
-                            <h4>Barbara Czernecka</h4>
-                            <span><i class="fas fa-phone"></i> +48 14 696 90 92</span>
-                            <a href="mailto:biuro@globetyre.pl"><i class="far fa-envelope"></i> biuro@globetyre.pl</a>
-                        </div>
+
+                <div class="row mt-5">
+                    <div class="col">
+                        <img src="./img/logistic/mag_1.jpg" alt="allegro logo" class="image-100" />
+                    </div>
+
+                    <div class="col">
+                        <img src="./img/logistic/mag_2.jpg" alt="allegro logo" class="image-100" />
+                    </div>
+
+                    <div class="col">
+                        <img src="./img/logistic/mag_3.jpg" alt="allegro logo" class="image-100" />
+                    </div>
+
+                    <div class="col">
+                        <img src="./img/logistic/mag_4.jpg" alt="allegro logo" class="image-100" />
+                    </div>
+                </div>
+
+                <div class="row mt-6">
+                    <div class="col">
+                        <h2 class="text-center display-5">
+                            <strong>Warto nam zaufać, ponieważ dbamy o swoich klientów i zawsze staramy się sprostać ich oczekiwaniom myśląc o ich satysfakcji, która nie ogranicza się wyłącznie do finansów.</strong>
+                        </h2>
                     </div>
                 </div>
             </div>
+        </sectioon>
 
-            <div class="columns is-desktop">
-                <div class="column">
-                    <h3 class=" subtitle has-text-centered">Logistyka i Magazyn</h3>
-                    <div class="columns is-mobile">
-                        <div class="column has-text-centered">
-                            <h4>Paweł Godawski</h4>
-                            <span><i class="fas fa-phone"></i> +48 792 650 570</span>
-                            <a href="mailto:logistyka@globetyre.pl"><i class="far fa-envelope"></i> logistyka@globetyre.pl</a>
+        <section id="s-contact" class="py-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="mb-5 text-center display-4"><strong>Kontakt</strong></h2>
+                    </div>
+                </div>
+                <!-- Zarzad -->
+                <div class="row mb-5">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="mb-5 text-center"><strong>Zarząd</strong></h3>
+                            </div>
                         </div>
-                        <div class="column has-text-centered">
-                            <h4>Robert Stanoch</h4>
-                            <span><i class="fas fa-phone"></i> +48 798 856 228</span>
-                            <a href="mailto:robert@globetyre.pl"><i class="far fa-envelope"></i> robert@globetyre.pl</a>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Zenon Godawski</h5>
+                                        <p class="mb-2">
+                                            <i class="fas fa-phone mr-1"></i>
+                                            <span>+48 694 644 722</span></p>
+                                        <a href="mailto:zenon@globetyre.pl">
+                                            <i class="far fa-envelope mr-1"></i>
+                                            <span>zenon@globetyre.pl</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Paweł Lachcik</h5>
+                                        <p class="mb-2"><i class="fas fa-phone mr-1"></i> +48 795 324 290</p>
+                                        <a href="mailto:pawel@globetyre.pl"><i class="far fa-envelope mr-1"></i> pawel@globetyre.pl</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="mb-5 text-center"><strong>Księgowość</strong></h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Ewa Bochenek</h5>
+                                        <p class="mb-2">
+                                            <i class="fas fa-phone mr-1"></i>
+                                            <span>+48 530 166 533</span></p>
+                                        <a href="mailto:ksiegowosc@globetyre.pl">
+                                            <i class="far fa-envelope mr-1"></i>
+                                            <span> ksiegowosc@globetyre.pl</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Barbara Czernecka</h5>
+                                        <p class="mb-2"><i class="fas fa-phone mr-1"></i> +48 14 696 90 92</p>
+                                        <a href="mailto:biuro@globetyre.pl"><i class="far fa-envelope mr-1"></i> biuro@globetyre.pl</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="column">
-                    <h3 class=" subtitle has-text-centered">Spedycja</h3>
-                    <div class="columns is-mobile">
-                        <div class="column has-text-centered">
-                            <h4>Karolina Kolbusz</h4>
-                            <span><i class="fas fa-phone"></i> +48 501 407 248</span>
-                            <a href="mailto:karolina@globetyre.pl"><i class="far fa-envelope"></i> karolina@globetyre.pl</a>
+                <!-- Logistyka -->
+                <div class="row mb-5">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="mb-5 text-center"><strong>Logistyka i Magazyn</strong></h3>
+                            </div>
                         </div>
-                        <div class="column has-text-centered">
-                            <h4>Danuta Baran</h4>
-                            <span><i class="fas fa-phone"></i> +48 515 336 523</span>
-                            <a href="mailto:spedycja@globetyre.pl"><i class="far fa-envelope"></i> spedycja@globetyre.pl</a>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Paweł Godawski</h5>
+                                        <p class="mb-2">
+                                            <i class="fas fa-phone mr-1"></i>
+                                            <span>+48 792 650 570</span></p>
+                                        <a href="mailto:logistyka@globetyre.pl">
+                                            <i class="far fa-envelope mr-1"></i>
+                                            <span>logistyka@globetyre.pl</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Robert Stanoch</h5>
+                                        <p class="mb-2"><i class="fas fa-phone mr-1"></i> +48 798 856 228</p>
+                                        <a href="mailto:robert@globetyre.pl"><i class="far fa-envelope mr-1"></i> robert@globetyre.pl</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="column has-text-centered">
-                            <h4>Michał Pisula</h4>
-                            <span><i class="fas fa-phone"></i> +48 533 995 909</span>
-                            <a href="mailto:michal@globetyre.pl"><i class="far fa-envelope"></i> michal@globetyre.pl</a>
+                    </div>
+                    <div class="col-7">
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="mb-5 text-center"><strong>Spedycja</strong></h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Karolina Kolbusz</h5>
+                                        <p class="mb-2">
+                                            <i class="fas fa-phone mr-1"></i>
+                                            <span>+48 501 407 248</span></p>
+                                        <a href="mailto:karolina@globetyre.pl">
+                                            <i class="far fa-envelope mr-1"></i>
+                                            <span> karolina@globetyre.pl</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Danuta Baran</h5>
+                                        <p class="mb-2"><i class="fas fa-phone mr-1"></i> +48 515 336 523</p>
+                                        <a href="mailto:spedycja@globetyre.pl"><i class="far fa-envelope mr-1"></i> spedycja@globetyre.pl</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Michał Pisula</h5>
+                                        <p class="mb-2"><i class="fas fa-phone mr-1"></i> +48 533 995 909</p>
+                                        <a href="mailto:michal@globetyre.pl"><i class="far fa-envelope mr-1"></i> biuro@globetyre.pl</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- Opony -->
+                <div class="row">
+                    <div class="col-7">
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="mb-5 text-center"><strong>Dystrybucja opon</strong></h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Agnieszka Siwiec</h5>
+                                        <p class="mb-2">
+                                            <i class="fas fa-phone mr-1"></i>
+                                            <span>+48 533 332 357</span></p>
+                                        <a href="mailto:agnieszka@globetyre.pl">
+                                            <i class="far fa-envelope mr-1"></i>
+                                            <span>agnieszka@globetyre.pl</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Magdalena Wojciechowska</h5>
+                                        <p class="mb-2"><i class="fas fa-phone mr-1"></i> +48 515 710 022</p>
+                                        <a href="mailto:magdalena@globetyre.pl"><i class="far fa-envelope mr-1"></i> magdalena@globetyre.pl</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Sylwia Kronka</h5>
+                                        <p class="mb-2"><i class="fas fa-phone mr-1"></i> +48 512 004 519</p>
+                                        <a href="mailto:sylwia@globetyre.pl"><i class="far fa-envelope mr-1"></i> sylwia@globetyre.pl</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="mb-5 text-center"><strong>Sklep internetowy i sprzedaż detaliczna</strong></h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Patryk Dębski</h5>
+                                        <p class="mb-2">
+                                            <i class="fas fa-phone mr-1"></i>
+                                            <span>+48 533 377 107</span></p>
+                                        <a href="mailto:patryk@globetyre.pl">
+                                            <i class="far fa-envelope mr-1"></i>
+                                            <span> patryk@globetyre.pl</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Marcin Barszcz</h5>
+                                        <p class="mb-2"><i class="fas fa-phone mr-1"></i> +48 533 430 443</p>
+                                        <a href="mailto:marcin@globetyre.pl"><i class="far fa-envelope mr-1"></i> marcin@globetyre.pl</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+        </section>
+    </main>
 
-            <div class="columns is-desktop">
-                <div class="column">
-                    <h3 class=" subtitle has-text-centered">Dystrybucja opon</h3>
-                    <div class="columns is-mobile">
-                        <div class="column has-text-centered">
-                            <h4>Agnieszka Siwiec</h4>
-                            <span><i class="fas fa-phone"></i> +48 533 332 357</span>
-                            <a href="mailto:agnieszka@globetyre.pl"><i class="far fa-envelope"></i> agnieszka@globetyre.pl</a>
-                        </div>
-                        <div class="column has-text-centered">
-                            <h4>Magdalena Wojciechowska</h4>
-                            <span><i class="fas fa-phone"></i> +48 515 710 022</span>
-                            <a href="mailto:magdalena@globetyre.pl"><i class="far fa-envelope"></i> magdalena@globetyre.pl</a>
-                        </div>
-                        <div class="column has-text-centered">
-                            <h4>Sylwia Kronka</h4>
-                            <span><i class="fas fa-phone"></i> +48 512 004 519</span>
-                            <a href="mailto:sylwia@globetyre.pl"><i class="far fa-envelope"></i> sylwia@globetyre.pl</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <h3 class=" subtitle has-text-centered">Sklep internetowy i sprzedaż detaliczna</h3>
-                    <div class="columns is-mobile">
-                        <div class="column has-text-centered">
-                            <h4>Patryk Dębski</h4>
-                            <span><i class="fas fa-phone"></i> +48 533 377 107</span>
-                            <a href="mailto:patryk@globetyre.pl"><i class="far fa-envelope"></i> patryk@globetyre.pl</a>
-                        </div>
-                        <div class="column has-text-centered">
-                            <h4>Marcin Barszcz</h4>
-                            <span><i class="fas fa-phone"></i> +48 533 430 443</span>
-                            <a href="mailto:marcin@globetyre.pl"><i class="far fa-envelope"></i> marcin@globetyre.pl</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <p class="has-text-centered">
+    <footer class="footer my-5">
+        <p class="text-center mb-0">
             Copyright © <strong><a href="mailto:marcinbarszcz123@gmail.com">Marcin Barszcz</a> 2020</strong> All Right Resereved
         </p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="./js/scripts.js"></script>
 </body>
 
