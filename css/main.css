@@ -202,5 +202,9 @@ header #s-hero h2 {
   .container {
     max-width: 90%;
   }
+  section {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
