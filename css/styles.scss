@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+// Variables //
+$base-color: #ffffff;
+$special-color: #dd8d04;
+$dark-color: #414141;
+$semi-dark-color: #6c6c6c;
+$overlay: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+$f-small: 1rem;
+
+@mixin s {
+  @media (max-width: 639px) {
+    @content;
+  }
+}
+@mixin m {
+  @media (max-width: 959px) {
+    @content;
+  }
+}
+@mixin l {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: 1599px) {
+    @content;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.is-special {
+  background-color: #dd8d04;
+  border-color: transparent;
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+}
+
+.is-special:hover {
+  color: #dd8d04;
+  background-color: transparent;
+  border: 1px solid #dd8d04;
+}
+
+.is-24 {
+  width: 24px;
+}
+
+.is-300 {
+  width: 300px;
+}
+
+header {
+  background: $overlay, url(../img/hero-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  .uk-logo {
+    img {
+      max-height: 2.75rem;
+    }
+  }
+
+  .uk-navbar-nav {
+    li {
+      a {
+        color: $base-color;
+      }
+
+      &:hover > a,
+      & > a.uk-open,
+      & > a:focus {
+        color: $special-color;
+      }
+    }
+  }
+
+  .uk-navbar-dropdown-nav {
+    li {
+      a {
+        color: $dark-color;
+      }
+
+      &.uk-active {
+        a {
+          color: $special-color;
+        }
+      }
+    }
+  }
+}
+
+#s-hero {
+  min-height: 70vh;
+
+  h1 {
+    color: $base-color;
+    font-size: 8rem;
+
+    span {
+      color: $special-color;
+    }
+  }
+
+  p {
+    color: $semi-dark-color;
+    color: $base-color;
+    font-size: 2rem;
+  }
+}
+
+// RWD
+
+@include s {
+  #s-hero {
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@include m {
+  #s-hero {
+    h1 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@include l {
+  #s-hero {
+    h1 {
+      font-size: 5rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
