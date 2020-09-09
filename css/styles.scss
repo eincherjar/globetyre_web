@@ -42,17 +42,32 @@ html {
 }
 
 .is-special {
-  background-color: #dd8d04;
+  background-color: $special-color;
   border-color: transparent;
-  color: #ffffff;
+  color: $base-color;
   border: 1px solid transparent;
   border-radius: 0.5rem;
+
+  &:hover {
+    color: $special-color;
+    background-color: transparent;
+    border: 1px solid $special-color;
+  }
 }
 
-.is-special:hover {
-  color: #dd8d04;
+.is-special-contact {
   background-color: transparent;
-  border: 1px solid #dd8d04;
+  border-color: transparent;
+  color: $special-color;
+  text-decoration: none !important;
+  transition: all 0.4s ease-in-out;
+  padding: 0.1rem 1rem;
+
+  &:hover {
+    background-color: $special-color;
+    color: $base-color;
+    transition: all 0.4s ease-in-out;
+  }
 }
 
 .is-24 {
@@ -61,6 +76,11 @@ html {
 
 .is-300 {
   width: 300px;
+}
+
+.is-margin-img {
+  margin: 0 auto;
+  display: block;
 }
 
 header {

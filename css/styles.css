@@ -24,12 +24,34 @@ html {
   border: 1px solid #dd8d04;
 }
 
+.is-special-contact {
+  background-color: transparent;
+  border-color: transparent;
+  color: #dd8d04;
+  text-decoration: none !important;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  padding: 0.1rem 1rem;
+}
+
+.is-special-contact:hover {
+  background-color: #dd8d04;
+  color: #ffffff;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
 .is-24 {
   width: 24px;
 }
 
 .is-300 {
   width: 300px;
+}
+
+.is-margin-img {
+  margin: 0 auto;
+  display: block;
 }
 
 header {
