@@ -85,6 +85,10 @@ html {
   display: block;
 }
 
+.uk-grid {
+  margin-left: 0;
+}
+
 header {
   background: $overlay, url(../img/hero-img.jpg);
   background-position: center;
