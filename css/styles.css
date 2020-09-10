@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap");
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   outline: none;
 }
 
@@ -15,7 +15,8 @@ html {
   border-color: transparent;
   color: #ffffff;
   border: 1px solid transparent;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
+  font-weight: bold;
 }
 
 .is-special:hover {
@@ -69,6 +70,7 @@ header .uk-logo img {
 
 header .uk-navbar-nav li a {
   color: #ffffff;
+  min-height: auto;
 }
 
 header .uk-navbar-nav li:hover > a,
@@ -91,7 +93,7 @@ header .uk-navbar-dropdown-nav li.uk-active a {
 
 #s-hero h1 {
   color: #ffffff;
-  font-size: 8rem;
+  font-size: 7rem;
 }
 
 #s-hero h1 span {
@@ -104,9 +106,13 @@ header .uk-navbar-dropdown-nav li.uk-active a {
   font-size: 2rem;
 }
 
+#s-contact .uk-card-primary.is-special {
+  background-color: #dd8d04;
+}
+
 @media (max-width: 639px) {
   #s-hero h1 {
-    font-size: 3rem;
+    font-size: 1rem;
   }
   #s-hero p {
     font-size: 1rem;
@@ -115,19 +121,19 @@ header .uk-navbar-dropdown-nav li.uk-active a {
 
 @media (max-width: 959px) {
   #s-hero h1 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   #s-hero p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 1199px) {
   #s-hero h1 {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   #s-hero p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
