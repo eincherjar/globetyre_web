@@ -112,6 +112,7 @@ header .uk-navbar-dropdown-nav li.uk-active a {
 
 #s-contact .uk-card-primary.is-special {
   background-color: #dd8d04;
+  border-radius: 0;
 }
 
 @media (max-width: 639px) {
