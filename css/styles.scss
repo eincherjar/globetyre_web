@@ -3,6 +3,7 @@
 // Variables //
 $base-color: #ffffff;
 $special-color: #dd8d04;
+$special-color2: #1e87f0;
 $dark-color: #414141;
 $semi-dark-color: #6c6c6c;
 $overlay: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
@@ -66,7 +67,7 @@ html {
   padding: 0.1rem 1rem;
 
   &:hover {
-    background-color: $special-color;
+    background-color: $special-color2;
     color: $base-color;
     transition: all 0.4s ease-in-out;
   }
@@ -87,6 +88,25 @@ html {
 
 .uk-grid {
   margin-left: 0;
+}
+
+#button-scroll-up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: $special-color;
+  color: $base-color;
+  cursor: pointer;
+  padding: 15px;
+
+  &:hover {
+    background-color: $special-color2;
+  }
 }
 
 header {

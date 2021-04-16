@@ -36,7 +36,7 @@ html {
 }
 
 .is-special-contact:hover {
-  background-color: #dd8d04;
+  background-color: #1e87f0;
   color: #ffffff;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -57,6 +57,25 @@ html {
 
 .uk-grid {
   margin-left: 0;
+}
+
+#button-scroll-up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #dd8d04;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 15px;
+}
+
+#button-scroll-up:hover {
+  background-color: #1e87f0;
 }
 
 header {

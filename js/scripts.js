@@ -1,17 +1,21 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // scroll-up
-  var btn = $("#button-scroll-up");
+//Get the button
+var mybutton = document.getElementById("button-scroll-up");
 
-  $(window).scroll(function () {
-    if ($(window).scrollTop() > 300) {
-      btn.addClass("scroll-up-show");
-    } else {
-      btn.removeClass("scroll-up-show");
-    }
-  });
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
 
-  btn.on("click", function (e) {
-    e.preventDefault();
-    $("html, body").animate({ scrollTop: 0 }, "500");
-  });
-});
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
