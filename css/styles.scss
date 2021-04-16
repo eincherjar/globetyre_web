@@ -43,6 +43,16 @@ html {
   scroll-behavior: smooth;
 }
 
+.img-zoom {
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+}
+
 .is-special {
   background-color: $special-color;
   border-color: transparent;
@@ -79,6 +89,18 @@ html {
 
 .is-300 {
   width: 300px;
+}
+
+.is-200 {
+  width: 200px;
+}
+
+.is-150 {
+  width: 150px;
+}
+
+.is-100 {
+  width: 100px;
 }
 
 .is-margin-img {
@@ -119,6 +141,12 @@ header {
   .uk-logo {
     img {
       max-height: 2.75rem;
+      transition: 0.3s;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+      transition: 0.3s;
     }
   }
 
@@ -126,6 +154,7 @@ header {
     li {
       a {
         color: $base-color;
+        transition: 0.3s;
         min-height: auto;
       }
 
@@ -133,6 +162,7 @@ header {
       & > a.uk-open,
       & > a:focus {
         color: $special-color;
+        transition: 0.3s;
       }
     }
   }

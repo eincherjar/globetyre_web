@@ -10,6 +10,19 @@ html {
   scroll-behavior: smooth;
 }
 
+.img-zoom {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.img-zoom:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .is-special {
   background-color: #dd8d04;
   border-color: transparent;
@@ -48,6 +61,18 @@ html {
 
 .is-300 {
   width: 300px;
+}
+
+.is-200 {
+  width: 200px;
+}
+
+.is-150 {
+  width: 150px;
+}
+
+.is-100 {
+  width: 100px;
 }
 
 .is-margin-img {
@@ -89,10 +114,21 @@ header {
 
 header .uk-logo img {
   max-height: 2.75rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .uk-logo:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header .uk-navbar-nav li a {
   color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   min-height: auto;
 }
 
@@ -100,6 +136,8 @@ header .uk-navbar-nav li:hover > a,
 header .uk-navbar-nav li > a.uk-open,
 header .uk-navbar-nav li > a:focus {
   color: #dd8d04;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header .uk-navbar-dropdown-nav li a {
