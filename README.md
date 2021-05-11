@@ -1,2 +1,3 @@
 # globetyre_web
-strona wizytowka firmy globe tyre
+
+strona wizytowka firmy Globe Tyre
